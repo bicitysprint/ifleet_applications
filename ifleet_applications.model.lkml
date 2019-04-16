@@ -9,3 +9,6 @@ datagroup: ifleet_applications_default_datagroup {
 }
 
 persist_with: ifleet_applications_default_datagroup
+
+
+explore: ifleet_applications {}
