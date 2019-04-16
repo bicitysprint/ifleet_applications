@@ -67,6 +67,16 @@ view: ifleet_applications {
 
   measure: count {
     type: count
-    drill_fields: [name, actionname]
+    drill_fields: [drilldown*]
   }
+
+
+
+  set:drilldown {
+
+    fields: [name, userid, postcode, telnum, mob,status, registered_date, actionid, actionname,vechtype,stage]
+
+  }
+
+
 }
