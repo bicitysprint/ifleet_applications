@@ -65,6 +65,14 @@ view: ifleet_applications {
     sql: ${TABLE}."VECHTYPE" ;;
   }
 
+dimension: service_centre {
+  type: string
+  sql: ${TABLE}."SERVICE_CENTRE" ;;
+
+
+}
+
+
   measure: count {
     type: count
     drill_fields: [drilldown*]
