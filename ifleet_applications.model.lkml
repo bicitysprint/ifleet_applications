@@ -15,9 +15,12 @@ datagroup: sc_compliance_default_datagroup {
 
 explore: ifleet_sc_expiry_view {
   persist_with: sc_compliance_default_datagroup
+  group_label: "Ifleet"
 }
 
 
 explore: ifleet_applications {
   persist_with: ifleet_applications_default_datagroup
+  group_label: "Ifleet"
+
 }
