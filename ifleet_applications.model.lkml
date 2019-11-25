@@ -34,7 +34,7 @@ explore: ifleet_applications {
 join: ifleet_drivers {
   view_label: "ifleet_driver_details"
   type: left_outer
-  relationship: many_to_one
+  relationship: one_to_one
   sql_on: ${ifleet_applications.userid} = ${ifleet_drivers.userid} ;;
 }
 

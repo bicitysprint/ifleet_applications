@@ -154,6 +154,13 @@ view: ifleet_drivers {
     sql: ${TABLE}."LEZ" ;;
   }
 
+  dimension: lez_group {
+    label: "ULEZ_compliant"
+    type: string
+    sql: case when ${lez} = 1 then 'Yes' else 'No' end ;;
+
+  }
+
   dimension: livery {
     type: string
     sql: ${TABLE}."LIVERY" ;;
