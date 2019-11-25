@@ -29,9 +29,13 @@ explore: ifleet_applications {
   persist_with: ifleet_applications_default_datagroup
   group_label: "Ifleet"
 
+
+
+join: ifleet_drivers {
+  view_label: "ifleet_driver_details"
+  type: left_outer
+  relationship: many_to_one
+  sql_on: ${ifleet_applications.userid} = ${ifleet_drivers.userid} ;;
 }
 
-explore: ifleet_drivers {
-  persist_with: ifleet_drivers_default_datagroup
-  group_label: "Ifleet"
 }
